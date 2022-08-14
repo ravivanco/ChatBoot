@@ -25,7 +25,7 @@ if(annyang){
         },
 
         'hola': function () {
-            utter.text = 'hola, cual es tu nombre?';
+            utter.text = 'hola te Saluda Kira tu asistente virtual, cual es tu nombre?';
             utter.voice = voices[2];
             window.speechSynthesis.speak(utter);
             //Guarda el nombre que le decimos por voz.
@@ -40,7 +40,7 @@ if(annyang){
             });
         },
         //Array que devuelve aleatoriamente un elemento del array, en este caso un chiste.
-       /*'Direccion': function () {
+       'Direccion': function () {
             utter.text = 'Estamos ubicados en la avenida panamericana norte, Provincia de Napo,  Sector archidona kilometro doce';
             utter.voice = voices[2];
             window.speechSynthesis.speak(utter);
@@ -50,41 +50,23 @@ if(annyang){
             utter.voice = voices[2];
             window.speechSynthesis.speak(utter);
         },
+
+        'Turismo': function () {
+            utter.text = 'En nuestras instalaciones contamos con: Cenderos para la visita de todas nuestras especies rescatadas, vista y entrada al rio del lugar, contamos con canchas, estacionamiento, piscina,restaurantes y hospedaje';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
+        'Clima': function () {
+            utter.text = 'El  Clima en la reserva El Arca, los veranos son largos, cálidos y nublados; los inviernos son cortos, calurosos y parcialmente nublados y está mojado durante todo el año. Durante el transcurso del año, la temperatura generalmente varía de 22 grados centigrados a 31 grados centigrados y rara vez baja a menos de 20 grados centigrados o sube a más de 33 grados centigrados.';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
         'Reptil': function () {
             utter.text = 'Los reptiles,son un grupo de animales vertebrados provistos de escamas epidérmicas de queratina.';
             utter.voice = voices[2];
             window.speechSynthesis.speak(utter);
         },
-        'mamifero': function () {
-            chistes = ['Los mamíferos son una clase de animales vertebrados amniotas homeotermos que poseen glándulas mamarias productoras de leche con las que alimentan a las crías',
-                'Los mamíferos son una clase de animales vertebrados amniotas homeotermos que poseen glándulas mamarias productoras de leche con las que alimentan a las crías',
-                'Los mamíferos son una clase de animales vertebrados amniotas homeotermos que poseen glándulas mamarias productoras de leche con las que alimentan a las crías',
-                'Los mamíferos son una clase de animales vertebrados amniotas homeotermos que poseen glándulas mamarias productoras de leche con las que alimentan a las crías'
-            ];
-            utter.text = chistes[Math.floor(Math.random() * chistes.length)]
-            utter.voice = voices[2];
-            window.speechSynthesis.speak(utter);
-        },
-        'aves': function () {
-            chistes = ['Las aves son una clase de animales vertebrados y de sangre caliente, cuyo cuerpo recubierto de plumas de distintos colores y cuyos huesos livianos les permiten en la mayoría de los casos volar, saltar o al menos mantenerse en el aire',
-                'Las aves son una clase de animales vertebrados y de sangre caliente, cuyo cuerpo recubierto de plumas de distintos colores y cuyos huesos livianos les permiten en la mayoría de los casos volar, saltar o al menos mantenerse en el aire',
-                'Las aves son una clase de animales vertebrados y de sangre caliente, cuyo cuerpo recubierto de plumas de distintos colores y cuyos huesos livianos les permiten en la mayoría de los casos volar, saltar o al menos mantenerse en el aire',
-                'Las aves son una clase de animales vertebrados y de sangre caliente, cuyo cuerpo recubierto de plumas de distintos colores y cuyos huesos livianos les permiten en la mayoría de los casos volar, saltar o al menos mantenerse en el aire'
-            ];
-            utter.text = chistes[Math.floor(Math.random() * chistes.length)]
-            utter.voice = voices[2];
-            window.speechSynthesis.speak(utter);
-        },
-        'peces': function () {
-            chistes = ['Los peces son animales vertebrados primariamente acuáticos, generalmente ectotérmicos  y con respiración por branquias',
-                'Los peces son animales vertebrados primariamente acuáticos, generalmente ectotérmicos  y con respiración por branquias',
-                'Los peces son animales vertebrados primariamente acuáticos, generalmente ectotérmicos  y con respiración por branquias',
-                'Los peces son animales vertebrados primariamente acuáticos, generalmente ectotérmicos  y con respiración por branquias'
-            ];
-            utter.text = chistes[Math.floor(Math.random() * chistes.length)]
-            utter.voice = voices[2];
-            window.speechSynthesis.speak(utter);
-        },
+
         'anfibio': function () {
             utter.text = 'Los anfibios son una clase de animales vertebrados anamniotas, tetrápodos, ectotérmicos, con respiración branquial durante la fase larvaria y pulmonar al alcanzar el estado adulto.​';
             utter.voice = voices[2];
@@ -151,6 +133,147 @@ if(annyang){
             utter.voice = voices[2];
             window.speechSynthesis.speak(utter);
         },
+
+        'cocodrilo': function () {
+            utter.text = 'Reptil de gran tamaño (de 3 a 10 m de largo, según las especies), de color marrón verdoso y piel cubierta de escamas muy duras; sus patas tienen una membrana entre los dedos para nadar, la cola es larga, aplanada lateralmente y con dos crestas de poca altura en su parte superior, los dientes fuertes y afilados, y el hocico alargado; es carnívoro y muy temible por su voracidad; habita en los grandes ríos de las regiones intertropicales.';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
+
+        'jaguar': function () {
+            utter.text = 'Mamífero felino de 160 a 260 cm de longitud (cola incluida), de pelaje amarillo rojizo con grupos de manchas negras arracimadas en torno a una oscura, blancuzco en el vientre; tiene cuerpo esbelto y fuerte, cola larga y potentes zarpas que usa para cazar; es rápido, ágil y fiero, y habita en bosques y selvas tropicales de América.';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
+
+        'puma': function () {
+            utter.text = 'Mamífero felino de unos 190 cm de longitud (cola incluida), pelaje suave de color pardo rojizo o grisáceo, blancuzco en el vientre, cuerpo esbelto, patas cortas, cola larga y uñas fuertes que usa para cazar; es muy veloz, ágil y fiero pero se adapta fácilmente a la cautividad; vive solitario en toda América.';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
+
+        'tortuga': function () {
+            utter.text = 'La tortuga terrestre argentina es una tortuga de la familia Testudinidae, endémica de los arbustales y bosques en las regiones áridas y semiáridas del centro-sur y sur de América del Sur. Es el reptil vivo más explotado por el comercio de animales salvajes en America Latina.';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
+
+        'tilapia': function () {
+            utter.text = 'La tilapia es principalmente un pez de agua dulce que habita en arroyos poco profundos, estanques, ríos y lagos, y es menos común que viva en aguas salobres es agua dulce, de 10 a 30 cm de longitud, de coloración distinta según las especies; vive en clima tropical, pero está muy extendido como pez de acuario y para el consumo humano.';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
+
+        'pato': function () {
+            utter.text = 'Ave palmípeda de plumaje denso, patas cortas y pico más ancho en la punta que en la base, que vive en estado salvaje o domesticada; nada y bucea muy bien pero camina con torpeza; es comestible y muy estimada como pieza de caza; hay muchas especies, que varían en tamaño y color.';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
+
+        'cuy': function () {
+            utter.text = 'El Cuy, llamado también cuye, cobaya, cobayo, conejillo de indias, guinea pig, científicamente corresponde a Cavia porcellus, de la familia Caviidae originaria en regiones andinas de America del Sur como Perú, Bolivia, Ecuador y Colombia. El cuerpo de estos pequeños roedores, es ancho y está cubierto de pelos que pueden ser lacios, erizados o pegados al cuerpo, formando remolinos, de varios colores. La cabeza es ancha y grande en comparación al cuerpo y sus orejas son pequeñas y redondeadas. Tiene patas cortas terminadas en finos deditos, cuyo número es variable.';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
+
+        'coral': function () {
+            utter.text = 'Una de las serpientes más famosas en todo el mundo es la serpiente de coral, a la que se le distingue de entre todas las demás gracias a sus vibrantes colores, en los que predominan el rojo, el blanco y el negro. Las serpientes de coral son también llamadas serpiente rabo de ají o coralillos, y son un grupo de serpientes venenosas pertenecientes a la familia Elapidae, originarias de las zonas tropicales.';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
+
+        'lechuza': function () {
+            utter.text = 'La lechuza en un ave rapaz carnívora y nocturna perteneciente al orden Strigiformes, de donde también el búho típico forma parte, solo que a diferencia de éste, no contiene unas plumas en su cabeza que le dan forma de orejas. Aunque suelen ser en su mayoría solitarios, el nombre colectivo que reciben se llama Parlamento. El tamaño de las lechuzas está entre la de un gorrión y un águila. Tienen importantes características como lo son sus desarrolladas garras, su hermoso y suave plumaje, su silencioso vuelo y fuertes patas. Se caracterizan por tener la forma de un disco sobre la cara a diferencia de otras especies que lo tienen en forma de corazón. ';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
+
+        /*FLORA*/
+
+        'bromelia': function () {
+            utter.text = 'Bromelia es un género tropical de plantas de la familia Bromeliaceae que crecen, normalmente, en bosques tropicales o subtropicales húmedos, tomando los nutrientes necesarios del depósito central que poseen o de la humedad ambiental.';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
+
+        'orquidea': function () {
+            utter.text = 'La orquídea es una planta que se caracteriza por su flor de tres sépalos: 2 pétalos y un lobelo donde se posa el insecto polinizador. Además, su estructura reproductiva, llamada ginostemo o comúnmente columna, se encuentra descubierta en medio de sus sépalos.';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
+
+        'cactus': function () {
+            utter.text = 'Los cactus tienen espinas que salen de una especie de grano, donde crecerá la flor. Las plantas que tienen hojas carnosas y que no tienen espinas o que tienen espinas que no salen de areolas, son llamadas comúnmente suculentas.';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
+
+        'cala': function () {
+            utter.text = 'Son plantas monocotiledóneas herbáceas, a veces arborescentes o como lianas (salvo en Lemnoideae, donde el cuerpo vegetativo es reducido y globoso a taloide). Hojas simples, enteras o lobuladas, en ocasiones fenestradas (con el limbo agujereado), a menudo grandes.';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
+
+        'helecho': function () {
+            utter.text = 'Los helechos (taxón Filicopsida, Pterophyta, Filicinae o Polypodiophyta) son plantas vasculares sin semilla (pteridofitas), cuyas características morfológicas más sobresalientes son sus hojas grandes ("megafilos" o "frondes"), usualmente pinadas y con prefoliación circinada.';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
+
+        'hepatica': function () {
+            utter.text = 'Los musgos o hepaticas (División: Briofitas) son plantas pequeñas que carecen de tejido vascular o leñoso. Requieren de un ambiente temporalmente saturado de agua para completar su ciclo de vida (Delgadillo, 2003a). Son el segundo grupo más importante dentro de las plantas verdes.';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
+
+        'sedro': function () {
+            utter.text = 'Tipo de árbol siempre verde de madera fragante y dura que es miembro de la familia del ciprés. El aceite de la madera se usa en jabones, champús, sales de baño, perfumes, aromaterapia y como repelente de insectos. El nombre científico es Juniperus virginiana.';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
+
+        'balsa': function () {
+            utter.text = 'Tipo de Arbol que se denomina madera de balsa a la madera del balso (Ochroma pyramidale), árbol que crece en la selva subtropical de Colombia, Ecuador, así como en Centroamérica y en otros países sudamericanos. Las condiciones geográficas y climáticas de la cuenca baja del río Guayas (Ecuador) hacen que el balso ecuatoriano tenga mayor desarrollo y sea de más calidad.';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
+
+        'shonta': function () {
+            utter.text = 'El arbol de chonta o corozo, es nativa de las regiones tropicales y subtropicales de América. Se aprovecha su fruto, una drupa de gran valor alimentario, su madera y el cogollo tierno, que se cosecha para extraer palmito. Bactris gasipaes es un vegetal de la familia de las arecáceas (de las palmeras). Se le conoce de forma común como pejibaye, pupuña, pipire, pijuayo, pixbae, chontaduro, cachipay, pifá, pibá, chima, chonta o tembe.';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
+
+        'bambu': function () {
+            utter.text = 'La guadua o bambu es una especie forestal representada por esbeltos y modulados tallos que enaltecen el paisaje de los valles interandinos es larga, recta, uniforme en su desarrollo, liviana, hueca, resistente, suave, de rápido crecimiento, de bello color e imperceptiblemente cónica.';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
+
+        'Cobano': function () {
+            utter.text = 'Árbol de hasta 25 mts. de altura, con el tronco recto de hasta 1.5 mt. de diámetro a la altura del pecho, presentando contrafuertes bien formados, la copa es frondosa, abierta en forma de abanico; Flores pequeñas de color verde amarillentas, florea de mayo a junio; los frutos son cápsulas leñosas, ovoides de color ..';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
+
+        'almendro': function () {
+            utter.text = 'El almendro (Prunus dulcis), es un árbol caducifolio de la familia de las rosáceas. Esta especie pertenece al subgénero Amygdalus del género Prunus. Puede alcanzar de 3 a 5 m de altura. De tallo liso, verde y a veces amarillo cuando es joven, pasa a ser agrietado, escamoso, cremoso y grisáceo cuando es adulto.';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
+
+        'kanela': function () {
+            utter.text = 'Se trata de un árbol siempre verde que llega a crecer hasta 13 metros, cuya corteza esun condimento con gran sabor. Las hojas miden de 7 a 25 cm de largo, y de 3 a 8 cm de ancho; son ovaladas,puntiagudas y de color verde brillante en la cara superior.';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
+
+        'topa': function () {
+            utter.text = '.';
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);
+        },
+
         'cuentame un chiste': function () {
             chistes = ['Por qué las focas del circo miran siempre hacia arriba?   Porque es donde están los focos.',
                 'Estas obsesionado con la comida!   No se a que te refieres croquetamente.',
@@ -160,7 +283,7 @@ if(annyang){
             utter.text = chistes[Math.floor(Math.random() * chistes.length)]
             utter.voice = voices[2];
             window.speechSynthesis.speak(utter);
-        }*/
+        }
     };
 
     annyang.addCommands(commands);

@@ -262,7 +262,7 @@ body{
 /*Testimony*/
 
 .testimony{
-    background-color: #e5e5f7;
+    background-color: rgb(218, 120, 120);
 }
 
 .testimony__container{
@@ -291,9 +291,9 @@ body{
 }
 
 .testimony__img{
-    width: 250px;
+    width: 300px;
     height: 250px;
-    border-radius: 50%;
+    border-radius: 1%;
     object-fit: cover;
     object-position: 50% 30%;
 }
@@ -303,13 +303,68 @@ body{
 }
 
 .testimony__course{
-    background-color: royalblue;
+    background-color: rgb(66, 160, 255);
     color: #fff;
     display: inline-block;
     padding: 5px;
 }
 
 .testimony__arrow{
+    width: 90%;
+    cursor: pointer;
+}
+
+/*testtimony__2*/
+
+.testimony__2{
+    background-color: #22ca28;
+}
+
+.testimony__container__2{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 1em;
+    align-items: center;
+}
+
+.testimony__body__2{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.testimony__body__2--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.testimony__img__2{
+    width: 300px;
+    height: 250px;
+    border-radius: 1%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+.testimony__texts__2{
+    max-width: 700px;
+}
+
+.testimony__course__2{
+    background-color: rgb(66, 160, 255);
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+}
+
+.testimony__arrow__2{
     width: 90%;
     cursor: pointer;
 }
@@ -478,7 +533,7 @@ body{
     width: 30px;
 }
 
-/*charbot*/
+/*chatbot*/
 
 #btn-mas{
     display: none;
