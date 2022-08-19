@@ -1,5 +1,6 @@
 
 if(annyang){
+
     var voices;
 
     var utter = new SpeechSynthesisUtterance();
@@ -14,12 +15,12 @@ if(annyang){
 
     var commands = {
         'hola quira ': function () {
-            utter.text = 'Hola Chucha de tu madre, que putas quieres';
+            utter.text = 'Hola';
             utter.voice = voices[2];
             window.speechSynthesis.speak(utter);
         },
         'como estas': function () {
-            utter.text = 'y a ti que Chuchas te importa, que hijeputas que eres';
+            utter.text = '';
             utter.voice = voices[2];
             window.speechSynthesis.speak(utter);
         },
@@ -282,8 +283,17 @@ if(annyang){
             ];
             utter.text = chistes[Math.floor(Math.random() * chistes.length)]
             utter.voice = voices[2];
-            window.speechSynthesis.speak(utter);
+            window.speechSynthesis.speak(utter);    
+        },
+
+        'dame informacion': function () {
+            chistes = ['Somos Zoocriadero, es una reserva de especies portegidas, entre las cuales contamos con especies Mamiferos, anfibios, reptiles,aves, peces'
+            ];
+            utter.text = chistes[Math.floor(Math.random() * chistes.length)]
+            utter.voice = voices[2];
+            window.speechSynthesis.speak(utter);    
         }
+        
     };
 
     annyang.addCommands(commands);
